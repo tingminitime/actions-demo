@@ -6,3 +6,7 @@ on:
 
 jobs:
   task_1:
+    steps:
+      - name: 檢查當前路徑
+        run: echo "$(pwd)"
+
