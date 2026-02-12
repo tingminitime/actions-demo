@@ -10,4 +10,16 @@ jobs:
     steps:
       - name: 檢查當前路徑
         run: echo "$(pwd)"
+      
+      - name: 檢查 Node.js 版本
+        run: node -v
+
+  task_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 下載 repo
+        uses: actions/checkout@v6
+
+      - name: 顯示所有檔案
+        run: ls -al
 
